@@ -141,8 +141,8 @@ nav{
         transition: all 0.7s ease;
     }
     .nav-links{
-        // background: url("https://source.unsplash.com/vTL_qy03D1I/1600x900") no-repeat;
-        background: #fff;
+        background: url("https://source.unsplash.com/vTL_qy03D1I/1600x900") no-repeat;
+        // background: #000;
         position: fixed;
         opacity: 1;
         height: 100vh;
@@ -165,13 +165,16 @@ nav{
     .nav-links li a{
       
         color: #000;
-        font-size: 14px;
     
     }
 
-    .sign-button{
-       color: #000;
+    .login-button{
+        background: #fff;
     }
+
+    .sign-button{
+        background: #fff;
+     }
 
     .nav-links li:nth-child(1){
         transition: all 0.5s ease 0.2s;

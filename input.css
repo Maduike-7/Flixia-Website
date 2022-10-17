@@ -132,7 +132,7 @@ nav {
     transition: all 0.7s ease;
   }
   .nav-links {
-    background: url("https://source.unsplash.com/vTL_qy03D1I/1600x900") no-repeat;
+    background: #fff;
     position: fixed;
     opacity: 1;
     height: 100vh;
@@ -152,13 +152,11 @@ nav {
     opacity: 0;
   }
   .nav-links li a {
-    color: #000;
-  }
-  .login-button {
-    background: #fff;
+    color: red;
+    font-size: 14px;
   }
   .sign-button {
-    background: #fff;
+    color: #000;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -368,4 +366,4 @@ body {
     width: 800%;
     height: 600px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=input.css.map */
