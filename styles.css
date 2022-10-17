@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -39,16 +39,15 @@ nav {
 .nav-links {
   width: 80vw;
   display: flex;
-  padding: 0 0.7vw;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   list-style: none;
   font-weight: 600;
 }
 
 .nav-links li a {
-  margin: 0 0.7vw;
+  margin: 0 2vw;
   text-decoration: none;
   transition: all ease-in-out 350ms;
   padding: 10px;
@@ -72,8 +71,8 @@ nav {
 
 /*Buttons Styling*/
 .login-button {
-  padding: 0.6rem 0.8rem;
-  margin-left: 2vw;
+  padding: 0.6rem 0.6rem;
+  margin-left: 10vw;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 2em;
@@ -81,7 +80,7 @@ nav {
 }
 
 .sign-button {
-  padding: 0.6rem 0.4rem;
+  padding: 0.6rem 0.6rem;
   margin-left: 2vw;
   font-size: 1rem;
   cursor: pointer;
@@ -132,10 +131,13 @@ nav {
     transition: all 0.7s ease;
   }
   .nav-links {
-    background: url("https://source.unsplash.com/vTL_qy03D1I/1600x900") no-repeat;
+    background: url("https://media.istockphoto.com/photos/abstract-shiny-surface-white-gray-background-picture-id1341630209?b=1&k=20&m=1341630209&s=170667a&w=0&h=i3UW_Rkj6tbmuAsWYzUQmybJIuFSF30ikoEN7cPCmek=") no-repeat;
+    background-size: cover;
+    background-position: center;
     position: fixed;
     opacity: 1;
     height: 100vh;
+    justify-content: space-evenly;
     width: 100%;
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
@@ -152,13 +154,15 @@ nav {
     opacity: 0;
   }
   .nav-links li a {
-    color: #000;
+    color: #fff;
   }
   .login-button {
-    background: #fff;
+    background: #000;
+    margin-left: 0px;
   }
   .sign-button {
-    background: #fff;
+    background: #000;
+    margin-left: 0px;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -256,27 +260,27 @@ body {
 }
 
 .slide:first-child {
-  background: url("https://media.istockphoto.com/photos/network-of-business-concept-picture-id1127447341?k=20&m=1127447341&s=612x612&w=0&h=aHVYNQvlSCIiljOqzVmkC8MtL-0xCsPINbEkThCgSBo=") no-repeat center top/cover;
+  background: url("https://img.freepik.com/premium-photo/start-up-business-team-office-employees-work-new-project_186382-20801.jpg?w=826") no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url("https://media.istockphoto.com/photos/learning-on-the-job-picture-id1312139041?k=20&m=1312139041&s=612x612&w=0&h=KTderBI479AxGNnHAckAzJNRyv7a8klLDcYR-2ZPfnM=") no-repeat center top/cover;
+  background: url("https://img.freepik.com/free-photo/black-business-adult-beautiful-african_1303-1365.jpg?size=626&ext=jpg&ga=GA1.2.831945678.1664188478&ga=GA1.2.831945678.1664188478") no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url("https://media.istockphoto.com/photos/executive-team-listening-to-contrary-views-from-colleague-picture-id1272326797?k=20&m=1272326797&s=612x612&w=0&h=aeYpQ8KIFwf55c9hWaKM8FxVe6ArYQDZ7pZ-W3OOdyU=") no-repeat center top/cover;
+  background: url("https://img.freepik.com/free-photo/smiling-woman-writing-notes-tablet-digital-device_53876-128806.jpg?size=626&ext=jpg&ga=GA1.2.831945678.1664188478") no-repeat center top/cover;
 }
 
 .slide:nth-child(4) {
-  background: url("https://media.istockphoto.com/photos/low-angle-of-tall-building-in-manhattan-picture-id1291177121?k=20&m=1291177121&s=612x612&w=0&h=LJT0EplsRvF8F-rcr5dgs1wb63VsNPwpP2cgJmjlwZk=") no-repeat center top/cover;
+  background: url("https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.831945678.1664188478") no-repeat center top/cover;
 }
 
 .slide:nth-child(5) {
-  background: url("https://media.istockphoto.com/photos/looking-directly-up-at-the-skyline-of-the-financial-district-in-picture-id1215119911?k=20&m=1215119911&s=612x612&w=0&h=xnJVMO0gPzC1Joa9bTzVOQn74dmh6vWeIntDag7I3jQ=") no-repeat center top/cover;
+  background: url("https://img.freepik.com/free-photo/african-american-business-woman-working-cafe_1303-10862.jpg?size=626&ext=jpg&ga=GA1.2.831945678.1664188478") no-repeat center top/cover;
 }
 
 .slide:nth-child(6) {
-  background: url("https://media.istockphoto.com/photos/audience-listens-to-the-lecturer-at-the-conference-picture-id974238866?k=20&m=974238866&s=612x612&w=0&h=DUBZOmGYNntkcIlfY8xFJYcVYFzO5HxnL9YaoqbV3xc=") no-repeat center center/cover;
+  background: url("https://img.freepik.com/free-photo/skyscrapers-from-low-angle-view_1359-568.jpg?size=626&ext=jpg&ga=GA1.2.831945678.1664188478") no-repeat center center/cover;
 }
 
 .buttons button#prev {
