@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flixia Login Form</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link rel="stylesheet" href="login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="login-box">
+		<h1>Login</h1>
+		<form>
+		  <input type="text" placeholder="Username" id="login-input" required>
+		  <input type="password" placeholder="Password" id="login-input" required>
+		  <button type="submit" id="login-button">Login</button>
+		</form>
+		  <a class="help" href="sign-up.html">Don't have an account? Sign Up</a>
+	  </div>
+	
+	  <div class="theme-toggle">
+		<h2></h2>
+		<label class="switch">
+		  <input type="checkbox" onclick="switchTheme()">
+		  <span class="slider"></span>
+		</label>
+	  </div>
+	  <script src="login.js"></script>
+</body>
+</html>

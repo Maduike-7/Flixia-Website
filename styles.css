@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0%;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  background-color: transparent;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Logo*/
+.logo {
+  padding: 3vh 3vw;
+  text-align: left;
+  width: 20vw;
+}
+
+.logo img {
+  height: auto;
+  width: 6rem;
+}
+
+/* Styling Navigation Links*/
+.nav-links {
+  width: 80vw;
+  display: flex;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: 600;
+}
+
+.nav-links li a {
+  margin: 0 0.7vw;
+  text-decoration: none;
+  transition: all ease-in-out 350ms;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-links li a:hover {
+  color: #FFF;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a:hover::before {
+  width: 80%;
+}
+
+/*Buttons Styling*/
+.login-button {
+  padding: 0.6rem 0.8rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2em;
+  background: #000;
+}
+
+.sign-button {
+  padding: 0.6rem 0.4rem;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2em;
+  color: #fff;
+  background: #000;
+}
+
+.sign-button:hover {
+  transition: all ease-in-out 350ms;
+  transform: scale(1.2);
+}
+
+.login-button:hover {
+  transition: all ease-in-out 350ms;
+  transform: scale(1.2);
+}
+
+/*Navigation Icon Styling*/
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+  color: #000;
+  background: #000;
+}
+
+/*Responsive Adding Media Queries*/
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+  .nav-links {
+    background: #fff;
+    position: fixed;
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    color: #000;
+    font-size: 14px;
+  }
+  .sign-button {
+    color: #000;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  li.fade {
+    opacity: 1;
+  }
+  /* Navigation Bar Icon on Click*/
+  .toggle .bars1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .bars2 {
+    transition: all 0s ease;
+    width: 0;
+  }
+  .toggle .bars3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: #362a2b;
+  color: #e5ebf3;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(229, 235, 243, 0.8);
+  color: #495b73;
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+.slide .content h1 {
+  margin-bottom: 0.625rem;
+  color: #362a2b;
+  font-size: 1.5rem;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateY(-300px);
+  transition: all 0.7s ease-in-out;
+}
+
+.slide:first-child {
+  background: url("https://media.istockphoto.com/photos/network-of-business-concept-picture-id1127447341?k=20&m=1127447341&s=612x612&w=0&h=aHVYNQvlSCIiljOqzVmkC8MtL-0xCsPINbEkThCgSBo=") no-repeat center top/cover;
+}
+
+.slide:nth-child(2) {
+  background: url("https://media.istockphoto.com/photos/learning-on-the-job-picture-id1312139041?k=20&m=1312139041&s=612x612&w=0&h=KTderBI479AxGNnHAckAzJNRyv7a8klLDcYR-2ZPfnM=") no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("https://media.istockphoto.com/photos/executive-team-listening-to-contrary-views-from-colleague-picture-id1272326797?k=20&m=1272326797&s=612x612&w=0&h=aeYpQ8KIFwf55c9hWaKM8FxVe6ArYQDZ7pZ-W3OOdyU=") no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+  background: url("https://media.istockphoto.com/photos/low-angle-of-tall-building-in-manhattan-picture-id1291177121?k=20&m=1291177121&s=612x612&w=0&h=LJT0EplsRvF8F-rcr5dgs1wb63VsNPwpP2cgJmjlwZk=") no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+  background: url("https://media.istockphoto.com/photos/looking-directly-up-at-the-skyline-of-the-financial-district-in-picture-id1215119911?k=20&m=1215119911&s=612x612&w=0&h=xnJVMO0gPzC1Joa9bTzVOQn74dmh6vWeIntDag7I3jQ=") no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+  background: url("https://media.istockphoto.com/photos/audience-listens-to-the-lecturer-at-the-conference-picture-id974238866?k=20&m=974238866&s=612x612&w=0&h=DUBZOmGYNntkcIlfY8xFJYcVYFzO5HxnL9YaoqbV3xc=") no-repeat center center/cover;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.buttons button {
+  border: 2px solid #e5ebf3;
+  background-color: transparent;
+  color: #e5ebf3;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #e5ebf3;
+  color: #362a2b;
+}
+
+@media (min-width: 640px) and (min-height: 640px) {
+  .slide .content {
+    bottom: 70px;
+    left: -600px;
+    width: 600px;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  .slide .content h1 {
+    font-size: 2rem;
+  }
+  .slide.current .content {
+    transform: translateX(600px);
+  }
+}
+@media only screen and (max-width: 980px) {
+  .split-content .text-content {
+    font-size: 2rem;
+  }
+  .slideshow--item {
+    width: 200%;
+    height: 600px;
+  }
+  .slideshow {
+    width: 100%;
+    height: 200px;
+  }
+  .slideshow--bullet {
+    margin: 8px 8px -110px;
+  }
+  .button-container {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .slideshow {
+    width: 100%;
+    height: 150px;
+  }
+  .slideshow--bullet {
+    margin: 8px 8px -100px;
+  }
+  .button-container {
+    margin-top: 120px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .split-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .split-content .text-content {
+    font-size: 1.5rem;
+    margin: 5rem 0rem;
+    text-align: center;
+  }
+  .slideshow--item {
+    width: 800%;
+    height: 600px;
+  }
+}/*# sourceMappingURL=input.css.map */
